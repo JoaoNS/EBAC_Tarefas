@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import FormVagas from '../../components/FormVagas'
-import { ListaDasVagas } from './styles'
+
 import Vaga from '../../components/Vaga'
+import { ListaDasVagas } from './styles'
 
 type Vaga = {
   id: string
