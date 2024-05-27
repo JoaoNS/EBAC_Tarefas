@@ -15,28 +15,23 @@ export const Form = styled.form`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--cor-principal);
+    background-color: ${(props) => props.theme.corPrincipal};
     content: '';
     opacity: 0.7;
   }
 
   div {
     position: relative;
-    color: #eee;
-  }
-
-  .heroTitle {
+    color: ${(props) => props.theme.CorTextoHero};
     font-family: Gloock, serif;
-    font-size: 48px;
+    font-size: 28px;
   }
 
   @media (max-width: 768px) {
-    .form {
-      height: auto;
-      padding: 24px 0;
-    }
+    height: auto;
+    padding: 24px 0;
 
-    .heroTitle {
+    div {
       font-size: 32px;
     }
   }
